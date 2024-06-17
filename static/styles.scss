@@ -1,0 +1,410 @@
+
+@import 'menu';
+@import 'footer';
+@import 'home';
+@import 'materialui';
+@import 'music';
+@import 'mobile';
+@import 'musicplayer';
+@import 'slideshow';
+@import 'unsure';
+
+* {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+#content {
+  left: auto;
+  width: 1000px;
+  margin: auto;
+}
+
+.elevation2 {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  height: 500px;
+  max-height: 500px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.elevation3 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+/* Headers */
+
+h1 {
+  font-size: 34pt;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+h3.au-target.header-text.ohaf-header {
+  padding: 0;
+}
+
+h4 {
+  font-size: 18pt;
+}
+
+h5 {
+  font-size: 16pt;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+h6 {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 'bold';
+  color: 'black';
+  font-style: 'italic';
+}
+
+/* Forms generic */
+
+form {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+.form-row {
+  min-width: 320px;
+  max-width: 340px;
+  height: 500px;
+}
+
+input {
+  padding-left: 5px;
+}
+
+label {
+  padding-top: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: block;
+  width: 100%;
+  color: #212529 !important;
+}
+
+.input-field {
+  margin-top: -2rem;
+  margin-bottom: 4px !important;
+}
+
+/* Required for accessibility purposes. */
+::placeholder {
+  color: #595959 !important;
+}
+
+/* Tables Generic */
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+tr {
+  border: none;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #d8ecf3;
+}
+
+tbody .white-background {
+  background-color: white !important;
+}
+
+tbody.regformtbody tr:nth-child(odd) {
+  background-color: white;
+}
+
+th, td {
+  border-collapse: collapse;
+  border: 1px solid #777;
+  padding: 8px;
+  text-align: left;
+}
+
+tbody.regformtbody td,
+tbody.regformtbody th {
+  border: none;
+}
+
+tbody.regformtbody th {
+  padding-bottom: 0;
+}
+
+tbody.regformtbody td {
+  padding: 10px;
+  padding-top: 4px;
+}
+
+/* Home Header and Menu */
+
+.headercontent {
+  top: 2px;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.headercontent img {
+  position: relative;
+  left: 0px;
+}
+
+.headercontent h3 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header-text {
+  color: white;
+  font-size: 24px;
+}
+
+.header-text-card {
+  left: 10px;
+  top: -32px;
+  text-align: center;
+}
+
+.home-sidebar {
+  background-color: #c0c0c0;
+}
+
+.home-header {
+  background-color: #2a222a;
+  height: 91px;
+}
+
+.home-header-image {
+  width: 85px;
+}
+
+.home-menu-toggle {
+  color: #333;
+}
+
+/* splash is in the index.ejs file, used for the initial page load animation */
+.splash {
+  text-align: center;
+  margin: 10% 0 0;
+  box-sizing: border-box;
+}
+
+.splash .message {
+  font-size: 72px;
+  line-height: 72px;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 0 15px;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.splash .fa-spinner {
+  text-align: center;
+  display: inline-block;
+  font-size: 72px;
+  margin-top: 50px;
+}
+
+/* Links */
+
+
+p, a, label {
+  font-family: 'Habibi', sans-serif;
+  font-size: 12pt;
+}
+
+a {
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+  border: none !important;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+// .dropdown-content li > a, .dropdown-content li > span {
+//   color: #000; // Change to something closer to original, but still WCAG approved
+// }
+
+a:not([href]):not([tabindex]) {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+a:not([href]):not([tabindex]):hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+
+.regularLink {
+  text-decoration: underline;
+}
+
+/* Buttons */
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddffcc;
+
+}
+
+button:disabled {
+  background-color: #f2f2f2;
+  cursor: none
+}
+
+button.floatRight {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.button-lib {
+  height: 0.35in;
+  text-transform: none;
+  margin: 20px 6cm 0;
+  background-color: #c0c0c0;
+  border-width: thin;
+  border-style: outset;
+  border-color: #8c8c8c;
+}
+
+.button-checkout {
+  height: 0.35in;
+  width: 0.95in;
+  text-transform: none;
+  background-color: black;
+  border-width: thin;
+  border-style: outset;
+  border-color: #737373;
+  color: white;
+}
+
+.button-checkin {
+  height: 0.35in;
+  width: 0.95in;
+  text-transform: none;
+  background-color: #88bde6;
+  border-width: thin;
+  border-style: outset;
+  border-color: #2d8bd2;
+  color: black;
+}
+
+/* Keyframes */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* animation definitions */
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* App/404 */
+
+
+div.fof {
+  height: 80vh;
+}
+
+/* Active Users SCC */
+
+.active-users {
+  display: flex;
+}
+
+@-moz-document url-prefix() {
+  .active-users-text {
+    margin-top: 7px !important;
+  }
+}
+.comments {
+  margin-top:0 !important;
+}

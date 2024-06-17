@@ -1,0 +1,39 @@
+.MuiDataGrid-main {
+  a, p, span {
+    font-size:14px;
+    text-align:left;
+  }
+  .MuiDataGrid-columnHeaderTitle {
+    font-weight: bold;
+  }
+}
+
+.ourPastPerformances {
+  background-color:white;
+  color:black;
+  font-weight:bold;
+  font-style:italic;
+  font-size:14pt !important;
+}
+
+.adminGrid {
+  .MuiDataGrid-row{
+    cursor:pointer;
+  }
+}
+
+.venueLabel {
+  font-size: 10pt;
+  margin-bottom: 0px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  margin-left: 14px;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell {
+  white-space: normal !important;
+  word-wrap: break-word !important;
+}
+
+.bookUsButton{
+  margin-left:20px !important;
+}

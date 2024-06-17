@@ -1,0 +1,298 @@
+@media screen and (min-width: 900px) {
+  .drawer-container {
+    float   : right;
+    position: fixed;
+    right   : 0;
+    z-index : 100;
+  }
+
+  .main-panel {
+    position: relative;
+    float   : left;
+    clear   : both;
+    height  : 100vh;
+    width   : calc(100% - 180px);
+    display : block;
+    overflow: hidden;
+  }
+
+  .material-header {
+    width: 100%;
+  }
+
+  .content-block {
+    position      : absolute;
+    top           : 0;
+    bottom        : 0;
+    left          : 0;
+    right         : 0;
+    overflow      : auto;
+    margin-top    : 91px;
+    margin-right  : inherit;
+    display       : flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .page-content {
+    border-right: 1px solid #000000;
+    flex        : 1 0 auto;
+  }
+
+  ::-webkit-scrollbar:vertical {
+    width: 0;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  div.youtubeOverlay {
+    margin-top: 180px;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .elevation2 {
+    max-width: 290px;
+  }
+
+  div.youtubeOverlay {
+    position  : absolute;
+    margin-top: 60px !important;
+    height    : 75px !important;
+  }
+  div.project {
+    min-width: 280px !important;
+  }
+
+  // 320x480 android
+  .nav-list {
+    overflow-y: auto;
+    height: 80% !important;
+  }
+  
+  blockquote {
+    padding-left: 9px !important;
+  }
+
+  .search-table-outer {
+    max-width: 100% !important;
+  }
+}
+// Galaxy S9/S9+
+@media screen and (min-width: 351px) and (max-width: 370px) {
+
+  #contentBlock > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2), div.elevation2 .project {
+    min-width: 280px !important;
+  }
+
+  .elevation2 {
+    max-width: 325px;
+  }
+
+  .nav-list {
+    overflow-y: auto;
+    height: 87% !important;
+  }
+}
+// iPhone 6/7/8 iOS 11 && iPhone X/XS iOS 12
+@media screen and (min-width: 375px) and (max-width: 376px) {
+  #contentBlock > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2), div.elevation2 .project {
+    min-width: 280px !important;
+  }
+  .elevation2 {
+    max-width: 300px;
+  }
+  .nav-list {
+    overflow-y: auto;
+    height: 77% !important;
+  }
+}
+// iPhone 6/7/8 Plus iOS 11
+@media screen and (min-width: 377px) and (max-width: 425px) {
+  .elevation2 {
+    max-width: 360px;
+  }
+  #copyInput {
+    width      : 95%;
+    margin-left: 8px;
+  }
+
+  #playSection audio {
+    background-position: center;
+  }
+  .nav-list {
+    overflow-y: auto;
+    height: 85% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .youtubeOverlay {
+    position  : absolute;
+    margin-top: 30px !important;
+    height    : 75px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .horiz-scroll {
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 625px){
+
+  div > div.row.form-row {
+    min-width: 80%;
+    max-width: 90%;
+  }
+  .Nav-Buttons {
+    padding-left: 0;
+    display: block;
+  }
+  .center {
+    top: 0;
+    background-color: white;
+  }
+}
+// iPad
+@media screen and (min-width: 750px) and (max-width: 769px) {
+  .nav-list {
+    overflow-y: auto;
+    height: 91% !important;
+  }
+}
+// Kindle Fire HDX && Nexus 10
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  .nav-list {
+    overflow-y: auto;
+    height: 92% !important;
+  }
+}
+
+@media screen and (min-width: 625px) and (max-width: 900px) {
+.material-header {
+  width: 100vw;
+ }
+}
+@media screen and (max-width: 900px) {
+  .drawer {
+    background-color: rgb(192, 192, 192);
+    float           : right;
+    height          : 100%;
+  }
+
+  .main-panel {
+    position: relative;
+    float   : left;
+    clear   : both;
+    height  : 100vh;
+    width   : 100vw;
+    display : block;
+    overflow-x: hidden;
+  }
+
+  .drawer-container.close {
+    display: none;
+  }
+
+  .drawer-container.open {
+    display         : block !important;
+    width           : 100vw !important;
+    z-index         : 100 !important;
+    cursor          : pointer;
+    background-color: rgba(42, 34, 42, 0.67);
+  }
+
+  .content-block {
+    width         : 100vw !important;
+    margin        : 0 auto;
+    height        : calc(100vh - 88px);
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .page-content {
+    flex: 1 0 auto;
+  }
+
+  .nav-list,
+  .navImage {
+    height: 91px;
+  }
+
+  .swipe-area {
+    width : 30px;
+    height: 100vh;
+  }
+
+  #playerAndButtons button {
+    border: 1px solid #cccccc;
+  }
+
+  ::-webkit-scrollbar:vertical {
+    width: 0;
+  }
+
+  .center {
+    width: calc(100vw - 12px);
+  }
+  // .nav-list {
+  //   width: 192px;
+  // }
+}
+
+.drawer-container {
+  height  : 100vh;
+  position: fixed;
+  float   : right;
+  z-index : 100;
+  width   : 180px;
+}
+
+.nav-list {
+  position        : fixed;
+  top             : 91px;
+  right           : 0;
+  height          : 100%;
+  z-index         : 90000;
+  background-color: rgb(192, 192, 192);
+}
+
+.navImage {
+  top             : 0;
+  right           : 0;
+  background-color: #2a222a;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width             : 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius   : 10px;
+  border          : 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+  border-radius   : 10px;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+.swipe-area {
+  position: absolute;
+  width   : 0;
+  left    : 128px;
+  top     : 0;
+  height  : 100%;
+  z-index : 9999;
+}
