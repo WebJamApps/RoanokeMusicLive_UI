@@ -2,8 +2,6 @@
 import env from 'dotenv';
 import { App, checkAppName, checkBackendUrl } from 'src/App';
 import renderer from 'react-test-renderer';
-import { Provider } from 'react-redux';
-import store from 'src/redux/store/index';
 import { BrowserRouter } from 'react-router-dom';
 
 env.config();
@@ -20,7 +18,7 @@ describe('App component', () => {
       reload: jest.fn(),
       assign: jest.fn(),
     };
-    const app:any = renderer.create(<Provider store={store.store}><App /></Provider>).toJSON();
+    const app:any = renderer.create(<App />).toJSON();
     expect(app.props.className).toBe('App');
   });
   it('checkAppName and return <Music />', () => {
